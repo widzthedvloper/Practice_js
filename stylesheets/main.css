@@ -1,32 +1,18 @@
 /*Variables*/
-
 /*color*/
-
-$custom-black: #141618;
-$white: #fff;
-$dark-text: #303133;
-$light-text: #7777;
-$dorado: #b4975a;
-$light-gray: #eaeaea;
-
 /*Fonts*/
-$main-font: 'Playfair Display', serif;
-$secondary-font: 'Poppins', serif;
-
 /*general style*/
-
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 body {
   font-size: 16px;
-  font-family: $main-font;
-  color: $dark-text;
+  font-family: "Playfair Display", serif;
+  color: #303133;
 }
 
 .container {
@@ -39,3 +25,4 @@ img {
   vertical-align: top;
   max-width: 100%;
 }
+/*# sourceMappingURL=main.css.map */
