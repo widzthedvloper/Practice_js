@@ -51,6 +51,22 @@ a {
   }
 }
 
+.tittle {
+
+    h2{
+        font-size: 3.125rem;
+        font-weight: 400;
+        line-height: 3.6875rem;
+        margin-bottom: 1.125rem;
+        font-style: italic;
+        letter-spacing: -0.02em;
+    }
+
+    p {
+        font-size: 1.5rem;
+        color: #777;
+    }
+}
 /* head style*/
 
 header {
@@ -86,6 +102,7 @@ header {
 /*Main content*/
 main {
   margin-top: 5.85rem;
+
   /*banner*/
   .banner {
       display: flex;
@@ -189,6 +206,38 @@ main {
                         left: 50%;
                         transform: translate(-50%, -50%);
                         font-size: 1.5625rem;
+                    }
+                }
+            }
+        }
+    }
+
+    /*About Us*/
+    .about-us {
+        padding: 5.625rem;
+        .container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            .column.left {
+                width: 30%;
+                border-right: 1px solid $light-gray;
+                display: flex;
+                align-items: center;
+                padding-right: 5%;
+            }
+
+            .column.right {
+                width: 70%;
+                padding-left: 5%;
+
+                .text {
+
+                    p {
+                        font-size: 1.125rem;
+                        line-height: 1.75rem;
+                        color: $light-text;
                     }
                 }
             }
