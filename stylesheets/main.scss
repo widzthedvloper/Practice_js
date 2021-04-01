@@ -8,6 +8,7 @@ $dark-text: #303133;
 $light-text: #7777;
 $dorado: #b4975a;
 $light-gray: #eaeaea;
+$custom-gray: #777;
 
 /*Fonts*/
 $main-font: 'Playfair Display', serif;
@@ -64,7 +65,7 @@ a {
 
     p {
         font-size: 1.5rem;
-        color: #777;
+        color: $custom-gray;
     }
 }
 /* head style*/
@@ -303,6 +304,114 @@ main {
 
                         &.foto3 {
                             background-image: url('../img/chef-3.jpg');
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /*Plat Menu*/
+    .menu-plat {
+        padding: 5.625rem 0;
+
+        .container {
+
+            .tittle {
+
+                h2 {
+                    text-align: center;
+                }
+            }
+
+            .container-menu {
+                margin-top: 2.5rem;
+
+                .head-menu {
+                    font-weight: 600;
+                    font-family: $secondary-font;
+                    letter-spacing: 0.1rem;
+                    text-transform: uppercase;
+                    list-style: none;
+                    display: flex;
+                    justify-content: center;
+
+                    li {
+
+                        a {
+                            font-size: 0.75rem;
+                            padding: 0 1.4375rem 1.125rem 1.4375rem;
+                            display: block;
+                            cursor: pointer;
+                            -webkit-transition: all 0.3s ease;
+                            -o-transition: all 0.3s ease;
+                            transition: all 0.3s ease;
+                            border-bottom: 2px solid transparent;
+
+                            &:hover {
+                                color: $dorado;
+                            }
+                        }
+
+                        &.active {
+
+                            a {
+                                color: $dorado;
+                                border-bottom: 2px solid $dorado;
+                            }
+                        }
+                    }
+                }
+
+                .content-menu {
+                    max-width: 50rem;
+                    margin: 0 auto;
+                    margin-top: 2.5rem;
+                    border: 6px double $light-gray;
+                    padding: 0 2.25rem;
+
+                    >div {
+                        display: none;
+                        -webkit-transition: all 0.3s ease;
+                        -o-transition: all 0.3s ease;
+                        transition: all 0.3s ease;
+                    }
+
+                    .active {
+                        display: block;
+                    }
+
+                    .item {
+                        display: flex;
+                        justify-content: space-between;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        padding: 2.25rem 0;
+                        border-bottom: 1px solid $light-gray;
+
+                        &:last-child {
+                            border-bottom: none;
+                        }
+
+                        .column.left {
+                            width: 70%;
+
+                            h3 {
+                                font-size: 1.5rem;
+                                font-weight: 400;
+                                margin-bottom: 0.625rem;
+                            }
+
+                            p {
+                                font-size: 1rem;
+                                color: $custom-gray;
+                            }
+                        }
+
+                        .column.right {
+                            width: 30%;
+                            text-align: center;
+                            font-size: 2.1875rem;
                         }
                     }
                 }

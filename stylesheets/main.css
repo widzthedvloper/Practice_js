@@ -89,6 +89,7 @@ main {
   /*banner*/
   /*About Us*/
   /*Our Chef*/
+  /*Plat Menu*/
 }
 main .banner {
   display: -webkit-box;
@@ -289,5 +290,93 @@ main .chef .container .column .slider .slide.foto2 {
 }
 main .chef .container .column .slider .slide.foto3 {
   background-image: url("../img/chef-3.jpg");
+}
+main .menu-plat {
+  padding: 5.625rem 0;
+}
+main .menu-plat .container .tittle h2 {
+  text-align: center;
+}
+main .menu-plat .container .container-menu {
+  margin-top: 2.5rem;
+}
+main .menu-plat .container .container-menu .head-menu {
+  font-weight: 600;
+  font-family: "Poppins", serif;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+main .menu-plat .container .container-menu .head-menu li a {
+  font-size: 0.75rem;
+  padding: 0 1.4375rem 1.125rem 1.4375rem;
+  display: block;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid transparent;
+}
+main .menu-plat .container .container-menu .head-menu li a:hover {
+  color: #b4975a;
+}
+main .menu-plat .container .container-menu .head-menu li.active a {
+  color: #b4975a;
+  border-bottom: 2px solid #b4975a;
+}
+main .menu-plat .container .container-menu .content-menu {
+  max-width: 50rem;
+  margin: 0 auto;
+  margin-top: 2.5rem;
+  border: 6px double #eaeaea;
+  padding: 0 2.25rem;
+}
+main .menu-plat .container .container-menu .content-menu > div {
+  display: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+main .menu-plat .container .container-menu .content-menu .active {
+  display: block;
+}
+main .menu-plat .container .container-menu .content-menu .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2.25rem 0;
+  border-bottom: 1px solid #eaeaea;
+}
+main .menu-plat .container .container-menu .content-menu .item:last-child {
+  border-bottom: none;
+}
+main .menu-plat .container .container-menu .content-menu .item .column.left {
+  width: 70%;
+}
+main .menu-plat .container .container-menu .content-menu .item .column.left h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 0.625rem;
+}
+main .menu-plat .container .container-menu .content-menu .item .column.left p {
+  font-size: 1rem;
+  color: #777;
+}
+main .menu-plat .container .container-menu .content-menu .item .column.right {
+  width: 30%;
+  text-align: center;
+  font-size: 2.1875rem;
 }
 /*# sourceMappingURL=main.css.map */
