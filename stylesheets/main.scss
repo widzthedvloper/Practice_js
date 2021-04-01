@@ -592,3 +592,117 @@ footer {
         }
     }
 }
+
+/*Media queries*/
+@media (max-width: 1500px) {
+    .main {
+        .banner {
+            .column {
+                .text {
+                    padding-left: 2.25rem;
+                    padding-right: 2.25rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .main .banner .column .foto {
+        display: none;
+    }
+
+    .main .banner .column .text {
+        width: 100%;
+    }
+}
+
+@media (max-width: 980px) {
+    .main .about-us .container .column.left {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid $light-gray;
+        text-align: center;
+        display: block;
+        padding: 0;
+        margin-bottom: 2.25rem;
+    }
+
+    .main .about-us .container .column.right {
+        width: 100%;
+        padding-left: 0;
+        text-align: justify;
+    }
+
+    .main .contact .data .container .blurb {
+        width: 100%;
+        max-width: 40.625rem;
+        margin: 0 auto;
+        margin-bottom: 2.25rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .main .banner .column {
+        width: 100%;
+        .foto-full {
+            display: none;
+        }
+        .text {
+
+            h2 {
+                text-align: center;
+            }
+
+            p {
+                text-align: justify;
+            }
+        }
+    }
+
+    .main .chef .container .column {
+
+        width: 100%;
+    }
+
+    .main .chef .container .column .tittle {
+        padding-left: 0;
+        padding-bottom: 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 580px) {
+    .tittle {
+
+        h2 {
+            font-size: 2rem;
+        }
+    }
+
+    .main .about-us .container .column.right .text p {
+        font-size: 1rem;
+    }
+
+    .main .chef .container .column.right .text p {
+        font-size: 1rem;
+    }
+
+    main .menu-plat .container .container-menu .content-menu .item .column.left {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 0.625rem;
+    }
+
+    main .menu-plat .container .container-menu .content-menu .item .column.right {
+        width: 100%;
+    }
+
+    main .contact .form .contact-form input[type="submit"] {
+        width: 100%;
+    }
+}
