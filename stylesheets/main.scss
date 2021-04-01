@@ -39,3 +39,46 @@ img {
   vertical-align: top;
   max-width: 100%;
 }
+
+a {
+  text-decoration: none;
+  color: $dark-text;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  &:hover {
+    color: rgba($dark-text, 0.5);
+  }
+}
+
+/* head style*/
+
+header {
+    .menu-pc {
+        background: $white;
+        width: 100%;
+        position: fixed;
+        z-index: 90;
+        top: 0;
+        padding: 0 2.25rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 94px;
+        border-bottom: 1px solid $light-gray;
+        .logo {
+          max-width: 3.125rem;
+        }
+        .main-menu {
+          a {
+            padding: 0 0.5625rem;
+          }
+        }
+        .social-media {
+          a {
+            padding: 0 0.5625rem;
+          }
+        }
+    }
+}
