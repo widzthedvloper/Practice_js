@@ -510,4 +510,25 @@ main .contact .form .contact-form input[type=submit] {
 main .contact .form .contact-form input[type=submit]:hover {
   background: #977c44;
 }
+
+/*Footer*/
+footer {
+  margin-top: 2.25rem;
+  background: #141618;
+  padding: 5.625rem 0;
+  text-align: center;
+  color: #fff;
+}
+footer .social-media {
+  margin-top: 2.25rem;
+}
+footer .social-media a {
+  padding: 0 0.5625rem;
+  color: #fff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+footer .social-media a:hover {
+  color: #b4975a;
+}
 /*# sourceMappingURL=main.css.map */
