@@ -90,6 +90,7 @@ main {
   /*About Us*/
   /*Our Chef*/
   /*Plat Menu*/
+  /*contact*/
 }
 main .banner {
   display: -webkit-box;
@@ -378,5 +379,135 @@ main .menu-plat .container .container-menu .content-menu .item .column.right {
   width: 30%;
   text-align: center;
   font-size: 2.1875rem;
+}
+main .contact .data {
+  padding: 5.625rem 0 11.875rem 0;
+  position: relative;
+  background-image: url("../img/contacto-bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+main .contact .data .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(20, 22, 24, 0.3);
+  top: 0;
+  z-index: 1;
+}
+main .contact .data .container {
+  position: relative;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+main .contact .data .container .blurb {
+  background: #fff;
+  border: 6px double #eaeaea;
+  padding: 2.25rem;
+  text-align: center;
+  width: 25%;
+}
+main .contact .data .container .blurb h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.6875rem;
+  margin-bottom: 1.125rem;
+  border-bottom: 1px solid #eaeaea;
+}
+main .contact .data .container .blurb p {
+  font-size: 1rem;
+  color: #777;
+}
+main .contact .form {
+  position: relative;
+  z-index: 3;
+  background: #fff;
+  max-width: 40.625rem;
+  margin: 0 auto;
+  padding: 2.25rem;
+  margin-top: -6.25rem;
+  width: 90%;
+}
+main .contact .form .contact-form .input-group {
+  position: relative;
+  margin-bottom: 2rem;
+}
+main .contact .form .contact-form .input-group input[type=text],
+main .contact .form .contact-form .input-group input[type=email],
+main .contact .form .contact-form .input-group textarea {
+  font-family: "Poppins", serif;
+  font-size: 1rem;
+  color: #303133;
+  width: 100%;
+  outline: none;
+  padding: 0.937rem 0;
+  background: none;
+  border: none;
+  border-bottom: 2px solid rgba(180, 151, 90, 0.5);
+  vertical-align: top;
+}
+main .contact .form .contact-form .input-group input[type=text]:focus,
+main .contact .form .contact-form .input-group input[type=email]:focus,
+main .contact .form .contact-form .input-group textarea:focus {
+  border-bottom: 2px solid #b4975a;
+}
+main .contact .form .contact-form .input-group textarea {
+  max-width: 100%;
+  max-height: 10.25rem;
+  min-height: 5.125rem;
+  min-width: 100%;
+}
+main .contact .form .contact-form .input-group label {
+  color: #7777;
+  font-family: "Poppins", serif;
+}
+main .contact .form .contact-form .input-group label.label {
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  font-size: 1rem;
+  line-height: 1rem;
+  margin-left: 1rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+main .contact .form .contact-form .input-group label.label.active {
+  top: -0.75rem;
+  margin-left: 0;
+  font-size: 0.75rem;
+  line-height: 0.75rem;
+  color: #7777;
+}
+main .contact .form .contact-form .input-group .error {
+  position: absolute;
+  color: #ff3b3b;
+  font-family: "Poppins", serif;
+  font-size: 0.875rem;
+}
+main .contact .form .contact-form input[type=submit] {
+  font-family: "Poppins", serif;
+  background: #b4975a;
+  color: #fff;
+  border-radius: 1px;
+  border: 2px solid #fff;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  margin-top: 3.125rem;
+  padding: 0.9375rem;
+  width: 20%;
+  outline: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+main .contact .form .contact-form input[type=submit]:hover {
+  background: #977c44;
 }
 /*# sourceMappingURL=main.css.map */
