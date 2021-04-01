@@ -243,4 +243,70 @@ main {
             }
         }
     }
+
+    /*Our Chef*/
+    .chef {
+        background: $custom-black;
+        padding: 5.625rem 0;
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+
+            .column {
+                width: 50%;
+
+                &.left {
+                    box-shadow: 0 9px 32px -1px rgba(0, 0, 0, 0.5);
+                    overflow: hidden;
+                }
+
+                .tittle {
+                    padding: 3.125rem;
+                    padding-right: 0;
+
+                    h2 {
+                        color: $white;
+                    }
+
+                    p {
+                        color: rgba($white, 0.7);
+                        padding-bottom: 1.125rem;
+                        font-size: 1.125rem;
+                        line-height: 1.75rem;
+
+                        &:last-child {
+                            padding-bottom: 0;
+                        }
+                    }
+                }
+
+                .slider {
+                    width: 300%;
+                    display: flex;
+
+                    .slide {
+                        width: 100%;
+                        min-height: 400px;
+                        background-size: cover;
+                        background-position: center;
+
+                        &.foto1 {
+                            background-image: url('../img/chef-1.jpg');
+                        }
+
+                        &.foto2 {
+                            background-image: url('../img/chef-2.jpg');
+                        }
+
+                        &.foto3 {
+                            background-image: url('../img/chef-3.jpg');
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

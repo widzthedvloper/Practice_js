@@ -88,6 +88,7 @@ main {
   margin-top: 5.85rem;
   /*banner*/
   /*About Us*/
+  /*Our Chef*/
 }
 main .banner {
   display: -webkit-box;
@@ -225,5 +226,68 @@ main .about-us .container .column.right .text p {
   font-size: 1.125rem;
   line-height: 1.75rem;
   color: #7777;
+}
+main .chef {
+  background: #141618;
+  padding: 5.625rem 0;
+}
+main .chef .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .chef .container .column {
+  width: 50%;
+}
+main .chef .container .column.left {
+  -webkit-box-shadow: 0 9px 32px -1px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 9px 32px -1px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+main .chef .container .column .tittle {
+  padding: 3.125rem;
+  padding-right: 0;
+}
+main .chef .container .column .tittle h2 {
+  color: #fff;
+}
+main .chef .container .column .tittle p {
+  color: rgba(255, 255, 255, 0.7);
+  padding-bottom: 1.125rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+main .chef .container .column .tittle p:last-child {
+  padding-bottom: 0;
+}
+main .chef .container .column .slider {
+  width: 300%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+main .chef .container .column .slider .slide {
+  width: 100%;
+  min-height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+main .chef .container .column .slider .slide.foto1 {
+  background-image: url("../img/chef-1.jpg");
+}
+main .chef .container .column .slider .slide.foto2 {
+  background-image: url("../img/chef-2.jpg");
+}
+main .chef .container .column .slider .slide.foto3 {
+  background-image: url("../img/chef-3.jpg");
 }
 /*# sourceMappingURL=main.css.map */
