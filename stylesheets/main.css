@@ -36,6 +36,27 @@ a:hover {
   color: rgba(48, 49, 51, 0.5);
 }
 
+.image-modal {
+  width: 90%;
+  max-width: 1000px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.image-modal + i {
+  position: absolute;
+  top: 2%;
+  right: 1%;
+  color: #303133;
+  font-size: 2.25rem;
+  background: #fff;
+  display: inline-block;
+  padding: 0.75rem 0.875rem;
+  cursor: pointer;
+}
+
 .tittle h2 {
   font-size: 3.125rem;
   font-weight: 400;

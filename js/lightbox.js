@@ -4,7 +4,8 @@ var propLightbox = {
     image: null,
     imageSrc: null,
     bodyDom: document.getElementsByTagName('body')[0],
-    lightbox_container: null
+    lightbox_container: null,
+    closeModal: null
 };
 
 //object with the lightbox effect methods
@@ -30,7 +31,7 @@ var metLightbox = {
         propLightbox.lightbox_container.style.height = '100%';
         propLightbox.lightbox_container.style.position = 'fixed';
         propLightbox.lightbox_container.style.zIndex = '1000';
-        propLightbox.lightbox_container.style.background = 'rbga(0,0,0,0.8)';
+        propLightbox.lightbox_container.style.background = 'rgba(0,0,0,0.8)';
         propLightbox.lightbox_container.style.top = '0';
         propLightbox.lightbox_container.style.left = '0';
 
@@ -39,6 +40,17 @@ var metLightbox = {
 
         propLightbox.modal.style.height = '100%';
         propLightbox.modal.appendChild(document.createElement('IMG')).setAttribute('src', propLightbox.imageSrc);
+
+        propLightbox.modal.getElementsByTagName('img')[0].setAttribute('class', 'image-modal');
+
+        propLightbox.modal.innerHTML += '<i id="close_modal" class="fa fa-times" aria-hidden="true"></i>';
+
+        propLightbox.closeModal = document.getElementById('close_modal');
+        propLightbox.closeModal.addEventListener('click', metLightbox.closeModal);
+    },
+
+    closeModal: function(){
+        propLightbox.bodyDom.removeChild(propLightbox.lightbox_container);
     }
 };
 
