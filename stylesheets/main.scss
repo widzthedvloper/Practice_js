@@ -59,6 +59,9 @@ a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    -webkit-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
 
     +i {
         position: absolute;

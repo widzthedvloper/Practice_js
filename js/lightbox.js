@@ -5,7 +5,8 @@ var propLightbox = {
     imageSrc: null,
     bodyDom: document.getElementsByTagName('body')[0],
     lightbox_container: null,
-    closeModal: null
+    closeModal: null,
+    animation: 'fade'
 };
 
 //object with the lightbox effect methods
@@ -42,6 +43,14 @@ var metLightbox = {
         propLightbox.modal.appendChild(document.createElement('IMG')).setAttribute('src', propLightbox.imageSrc);
 
         propLightbox.modal.getElementsByTagName('img')[0].setAttribute('class', 'image-modal');
+
+        if (propLightbox.animation == 'fade') {
+            document.getElementsByClassName('image-modal')[0].style.opacity = 0;
+
+            setTimeout(function(){
+                document.getElementsByClassName('image-modal')[0].style.opacity = 1;
+            }, 50);
+        }
 
         propLightbox.modal.innerHTML += '<i id="close_modal" class="fa fa-times" aria-hidden="true"></i>';
 
