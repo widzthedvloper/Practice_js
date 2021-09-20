@@ -2,21 +2,21 @@
 
     const propSlider = {
         slider: document.getElementById("slider"),
-        primerSlide: null
+        firstSlide: null
     }
 
     const metSlider = {
-        inicio: function() {
-            setInterval(metSlider.moverSlide, 3000);
+        start: function() {
+            setInterval(metSlider.moveSlide, 3000);
         },
 
-        moverSlide: function(){
+        moveSlide: function(){
             propSlider.slider.style.transition = "all 1s ease";
             propSlider.slider.style.marginLeft = "-100%";
 
             setTimeout(function() {
-                propSlider.primerSlide = propSlider.slider.firstElementChild;
-                propSlider.slider.appendChild(propSlider.primerSlide);
+                propSlider.firstSlide = propSlider.slider.firstElementChild;
+                propSlider.slider.appendChild(propSlider.firstSlide);
 
                 propSlider.slider.style.transition = "unset";
                 propSlider.slider.style.marginLeft = 0;
@@ -24,5 +24,5 @@
         }
     }
 
-    metSlider.inicio();
+    metSlider.start();
 }())
