@@ -16,6 +16,8 @@
 
             if (propParallax.path > propParallax.section.offsetTop - window.outerHeight && propParallax.path <= propParallax.limit) {
                 propParallax.section.style.backgroundPositionY = (propParallax.path - propParallax.section.offsetTop) / 1.5 +'px';
+            } else {
+                propParallax.section.style.backgroundPositionY = 0;
             }
         }
     }
