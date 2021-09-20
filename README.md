@@ -19,7 +19,7 @@
 
 ## Prerequisites
 
-- JavaScript ES6
+- JavaScript
 - jsx
 - React
 - Code Editor(VScode)
@@ -37,8 +37,8 @@ This project is for educational purposes.
 
 ## Acknowledgment
 
-- Brian Holt
-- FrontEndMaster
+- Sergio Agamez
+- Crehana
 
 👤 **Widzmarc Jean Nesly Phelle**
 
