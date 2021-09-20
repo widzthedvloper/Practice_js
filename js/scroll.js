@@ -24,6 +24,7 @@
 
         switchToSectionX: function(e){
             e.preventDefault();
+            clearInterval(propScroll.lapse);
             propScroll.destination = this.getAttribute('href');
             propScroll.section_distance = document.querySelector(propScroll.destination).offsetTop - 94;
             
@@ -41,6 +42,26 @@
                     if(propScroll.position <= propScroll.section_distance){
                         clearInterval(propScroll.lapse);
                     }
+                }
+
+                window.scrollTo(0, propScroll.position);
+            }, 15);
+        },
+
+        jumpToStart: function(e){
+            e.preventDefault();
+            clearInterval(propScroll.lapse);
+            propScroll.position = window.pageYOffset;
+
+            propScroll.lapse = setInterval(function(){
+                if(propScroll.position > 0) {
+                    propScroll.position -= 30;
+
+                    if(propScroll.position <= 0 ){
+                        clearInterval(propScroll.lapse);
+                    }
+                } else {
+                    return;
                 }
 
                 window.scrollTo(0, propScroll.position);
